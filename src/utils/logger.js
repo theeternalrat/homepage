@@ -57,7 +57,7 @@ function init() {
           winston.format.timestamp(),
           winston.format.printf(messageFormatter)
         ),
-        filename: `${configPath}/logs/homepage.log`,
+        filename: `/var/log/homepage/homepage.log`,
         handleExceptions: true,
         handleRejections: true,
       }),
